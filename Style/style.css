@@ -1,0 +1,131 @@
+:root{
+    --color-header:hsl(0, 0%, 100%);
+    --color-paragraph:hsl(217, 12%, 63%);
+    --color-background: hsl(216, 12%, 8%);
+    --color-number:hsl(216, 12%, 54%);
+    --color-card:hsl(213, 19%, 18%);
+    --color-submit:hsl(25, 97%, 53%);
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-background);
+}
+h3{
+    color:var(--color-header);
+    font-weight: 700;
+
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--color-paragraph);
+}
+.card{
+    background-image: linear-gradient(var(--color-card),hsl(216, 12%, 10%));
+    margin:150px auto;
+    width: 350px;
+    height:350px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.card--rating{
+    margin:23px 26px 0px;
+    padding-top: 25px;
+
+}
+ul{
+    padding-left:0px;
+    list-style-type: none;
+    margin-top: 30px;
+    color:var(--color-paragraph);
+}
+
+li{
+    position: relative;
+    left:15px;
+    top:10px;
+    
+    
+}
+
+.card--circle{
+    height:40px;
+    width:40px;
+    border-radius: 50px;
+    background-color: hsl(215, 18%, 19%);
+    margin-right:15px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+ul div:hover{
+    color:white;
+    background-color:var(--color-paragraph);
+    cursor:pointer;
+
+}
+.card--icon{
+    position: relative;
+    left:12px;
+    top:10px;
+    
+}
+.card__submit{
+    margin-top:30px;
+    height:45px;
+    background-color: var(--color-submit);
+    border-radius:30px;
+}
+.card__submit:hover{
+    cursor:pointer;
+}
+.card__submit:focus{
+    color:white;
+}
+.card__submit--font{
+    color: white;
+    letter-spacing:2px;
+    text-decoration: none;
+}
+.card__submit--position{
+    position:relative;
+    left:110px;
+    top:12px;
+}
+.card--circle--orange{
+    background-color: var(--color-submit);
+    color:white;
+}
+.hidden{
+    display: none;
+}
+.card__icon__thanks{
+    margin: 15px 50px;
+}
+.card__selection__paragraph__box{
+    height: 35px;   
+    width: 180px;
+    position: relative;
+    left:60px;
+   
+    background-color:hsl(215, 18%, 19%);
+    border-radius: 50px;
+}
+.card__selection__paragraph{
+    position:relative;
+    top: 9px;
+    left:10px;
+    color:var(--color-submit)
+}
+.card__header__position{
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.card--text--center{
+    text-align: center;
+}
