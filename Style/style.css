@@ -47,10 +47,7 @@ li{
     position: relative;
     left:15px;
     top:10px;
-    
-    
 }
-
 .card--circle{
     height:40px;
     width:40px;
@@ -77,22 +74,31 @@ ul div:hover{
     height:45px;
     background-color: var(--color-submit);
     border-radius:30px;
+    transition: all 0.5s;
 }
 .card__submit:hover{
+    background-color: white;
     cursor:pointer;
 }
-.card__submit:focus{
-    color:white;
-}
 .card__submit--font{
+    display: block;
+    height: 35px;
+    width:298px;
     color: white;
     letter-spacing:2px;
     text-decoration: none;
+    transition: all 0.5s;
+    border-radius: inherit;
+}
+.card__submit--font:hover{
+    color:var(--color-submit);
+    cursor:pointer;
+
 }
 .card__submit--position{
-    position:relative;
-    left:110px;
-    top:12px;
+    padding-top: 12px;
+    text-align: center;
+
 }
 .card--circle--orange{
     background-color: var(--color-submit);
@@ -118,9 +124,6 @@ ul div:hover{
     top: 9px;
     left:10px;
     color:var(--color-submit)
-}
-.card__header__position{
-
 }
 .flex{
     display: flex;
