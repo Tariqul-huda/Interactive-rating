@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://tariqul-huda.github.io/Interactive-rating/#
 
 ## My process
 At first I added HTML then went to css.I tried HTML5 approach and for class name tried to use BEM convention. I used Vanila JS to add some functionality. 
