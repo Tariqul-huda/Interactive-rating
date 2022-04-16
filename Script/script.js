@@ -22,3 +22,14 @@ submit.addEventListener("click",()=>{
     rate[0].innerHTML=`<p class="card__selection__paragraph">You selected ${value} out of 5</p>`
 
 })
+list.forEach(item=>{
+    item.addEventListener("touchend",event=>{
+        value=parseInt(event.target.textContent);
+        item.classList.toggle("card--circle--orange")
+        for(let count=0;count<list.length;count++){
+            if(parseInt(list[count].textContent)!==value){
+                list[count].classList.remove("card--circle--orange")
+            }
+        }
+    })
+});
