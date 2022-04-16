@@ -57,11 +57,16 @@ li{
     display: inline-block;
     transition: all 0.3s;
 }
-ul div:hover{
+/* ul div:hover{
     color:white;
     background-color:var(--color-paragraph);
     cursor:pointer;
 
+} */
+.card--circle--hover:hover{
+    color:white;
+    background-color: var(--color-paragraph);
+    cursor:pointer;
 }
 .card--icon{
     position: relative;

@@ -19,7 +19,7 @@ function isMobile(){
     }
 }
 function addCircleOrange(item, list){
-     value = parseInt(event.target.textContent);
+    value = parseInt(event.target.textContent);
     item.classList.toggle("card--circle--orange");
     for(let count =0;count<list.length;count++){
         if(parseInt(list[count].textContent)!== value){
@@ -29,13 +29,17 @@ function addCircleOrange(item, list){
 }
 if(isMobile()){
     list.forEach(item=>{
-        item.addEventListener("touchend",addCircleOrange.bind(this,item,list))
+        item.classList.remove("card--circle--hover")
+        item.addEventListener("touchstart",addCircleOrange.bind(this,item,list))
     })
 
 }
-list.forEach(item=>{
-    item.addEventListener("click",addCircleOrange.bind(this,item,list))
-})
+else{
+    list.forEach(item=>{
+        item.addEventListener("click",addCircleOrange.bind(this,item,list))
+    })
+
+}
 
 submit.addEventListener("click",()=>{
     cardRating.classList.toggle("hidden");
