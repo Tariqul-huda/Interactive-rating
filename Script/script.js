@@ -27,7 +27,15 @@ function addCircleOrange(item, list){
         }
     }
 }
-
+function hasCircleOrange(list){
+    for(let count=0;count<list.length;count++){
+        if(list[count].classList.contains("card--circle--orange")){
+            return true;
+        }
+    
+    }
+    return false;
+}
 if(isMobile()){
     submit.classList.remove("card__submit__hover")
     submit.childNodes[0].classList.remove("card__submit--font__hover");
@@ -45,11 +53,15 @@ else{
 }
 
 submit.addEventListener("click",()=>{
-    if(value){
+    if(!hasCircleOrange(list)){
+        value=0;
+    }
+    else if(value){
         cardRating.classList.toggle("hidden");
         thank.classList.toggle('hidden')
         rate[0].innerHTML=`<p class="card__selection__paragraph">You selected ${value} out of 5</p>`
     }
+
 
 })
 document.addEventListener("click",e=>{
