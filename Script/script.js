@@ -27,6 +27,7 @@ function addCircleOrange(item, list){
         }
     }
 }
+
 if(isMobile()){
     list.forEach(item=>{
         item.classList.remove("card--circle--hover")
@@ -42,8 +43,21 @@ else{
 }
 
 submit.addEventListener("click",()=>{
-    cardRating.classList.toggle("hidden");
-    thank.classList.toggle('hidden')
-    rate[0].innerHTML=`<p class="card__selection__paragraph">You selected ${value} out of 5</p>`
+    if(value){
+        cardRating.classList.toggle("hidden");
+        thank.classList.toggle('hidden')
+        rate[0].innerHTML=`<p class="card__selection__paragraph">You selected ${value} out of 5</p>`
+    }
 
 })
+document.addEventListener("click",e=>{
+        if(e.target.closest("UL")===null){
+            value=0;
+            list.forEach(item=>{
+                item.classList.remove("card--circle--orange");
+            })
+            
+        }
+    })
+
+
