@@ -81,7 +81,7 @@ li{
     border-radius:30px;
     transition: all 0.5s;
 }
-.card__submit:hover{
+.card__submit__hover:hover{
     background-color: white;
     cursor:pointer;
 }
@@ -95,7 +95,7 @@ li{
     transition: all 0.5s;
     border-radius: inherit;
 }
-.card__submit--font:hover{
+.card__submit--font__hover:hover{
     color:var(--color-submit);
     cursor:pointer;
 

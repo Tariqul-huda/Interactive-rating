@@ -29,6 +29,8 @@ function addCircleOrange(item, list){
 }
 
 if(isMobile()){
+    submit.classList.remove("card__submit__hover")
+    // submit.childNodes[0].classList.remove("card__submit--font__hover");
     list.forEach(item=>{
         item.classList.remove("card--circle--hover")
         item.addEventListener("touchstart",addCircleOrange.bind(this,item,list))
